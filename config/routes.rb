@@ -1,8 +1,8 @@
 DevconSample::Application.routes.draw do
   #get "pages/hello"
   
-  get 'hello/:name' => 'pages#hello'
-  
+  get ':name' => 'pages#hello'
+  root 'pages#hello'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
